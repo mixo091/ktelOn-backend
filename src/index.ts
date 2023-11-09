@@ -2,6 +2,7 @@ import * as dotenv from "dotenv";
 import express, { Request, Response } from "express";
 import cors from "cors";
 import helmet from "helmet";
+import { trips } from "./data/trips";
 
 dotenv.config();
 
@@ -40,3 +41,8 @@ app.use("/", router);
 router.get("/", (req: Request, res: Response) => {
   res.status(200).send("Hello ktelon");
 });
+
+
+router.get("/trips" , (req:Request , res:Response) => {
+    res.status(200).json(trips);
+})
