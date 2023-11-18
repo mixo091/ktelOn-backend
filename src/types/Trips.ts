@@ -3,23 +3,26 @@ import { Station } from "./Station";
 export interface Trip {
   fromId: number;
   toId: number;
-  startTimes: Time[];
+  availableStartTimes: Schedule[];
+  tripDistance: TripDistance;
 }
 
-export interface Distance {
+export interface TripDistance {
   space: number;
   time: number;
   stations: number;
 }
 
-export interface Time {
+export interface Schedule {
   isForCurrentStation: boolean;
   targetStationId: number;
-  value: string;
-  distance ?: Distance;
+  times: string[];
+  days: string[];
 }
 
 export interface Line {
     id:number;
     stations: Station[];
+    order: number[];
+    schedules: Schedule[];
 }
