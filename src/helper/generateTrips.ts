@@ -1,3 +1,4 @@
+/*
 import { stations } from "../data/stations";
 import { timesOptions } from "../data/trips";
 import { Trip } from "../types/Trips";
@@ -20,7 +21,7 @@ export const generateTrips = () => {
       const trip: Trip = {
         fromId: from.id,
         toId: to.id,
-        startTimes: times.map((time) => ({
+        availableStartTimes: times.map((time) => ({
           isForCurrentStation: true,
           targetStationId: from.id,
           value: time,
@@ -31,3 +32,4 @@ export const generateTrips = () => {
   }
   return trips;
 };
+*/

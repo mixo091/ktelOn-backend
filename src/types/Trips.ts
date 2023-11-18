@@ -21,8 +21,8 @@ export interface Schedule {
 }
 
 export interface Line {
-    id:number;
-    stations: Station[];
-    order: number[];
-    schedules: Schedule[];
+  id: number;
+  stations: Station[];
+  order: number[];
+  schedules: Schedule[];
 }

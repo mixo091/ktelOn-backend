@@ -1,4 +1,4 @@
-import { generateTrips } from "../helper/generateTrips";
+/* import { generateTrips } from "../helper/generateTrips";
 
 export const timesOptions = [
     "07:00",
@@ -40,3 +40,4 @@ export const timesOptions = [
   ];
   
   export const trips = generateTrips();
+*/
